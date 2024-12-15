@@ -12,11 +12,11 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
 
 ## 🛠️ Funcionalidades
 
-- ✅ Adicionar tarefas com título e descrição.  
-- 📋 Listar todas as tarefas salvas.  
-- ✏️ Editar tarefas existentes.  
-- 🗑️ Excluir tarefas desnecessárias.  
-- 💾 Persistência de dados usando um arquivo JSON.  
+- ✅ Adicionar tarefas com título e descrição. ✅
+- 📋 Listar todas as tarefas salvas. ✅ 
+- ✏️ Editar tarefas existentes. 🚧 
+- 🗑️ Excluir tarefas desnecessárias. 🚧
+- 💾 Persistência de dados usando um arquivo JSON. ✅
 
 ## 📂 **Estrutura do Projeto**
 
