@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+    // Função para editar tarefa
     const editTask = async (id) => {
       const title = prompt("Digite o novo título da tarefa:");
       const description = prompt("Digite a nova descrição da tarefa:");
@@ -35,6 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchTasks(); // Atualiza a lista de tarefas
       }
     };
+
+    // Função para excluir tarefa
+  const deleteTask = async (id) => {
+    if (confirm('Tem certeza de que deseja excluir esta tarefa?')) {
+      await fetch(`/tasks/${id}`, { method: 'DELETE' });
+      fetchTasks();
+    }
+  };
 
     const renderTasks = (tasks) => {
       const taskList = document.getElementById('taskList');

@@ -85,6 +85,23 @@ app.put('/tasks/:id', (req, res) => {
    res.json({ message: 'Tarefa atualizada com sucesso!' });
  });
 
+ // Deletar uma tarefa
+app.delete('/tasks/:id', (req, res) => {
+  const { id } = req.params; // ID da tarefa
+  let tasks = readTasks();
+
+  const taskIndex = tasks.findIndex(task => task.id === parseInt(id));
+  if (taskIndex === -1) {
+    return res.status(404).json({ error: 'Tarefa não encontrada' });
+  }
+
+  // Remove a tarefa da lista
+  tasks = tasks.filter(task => task.id !== parseInt(id));
+
+  writeTasks(tasks);
+  res.json({ message: 'Tarefa excluída com sucesso!' });
+});
+
 app.delete('/tasks/:id', (req, res) => {
   const tasks = readTasks();
   const id = parseInt(req.params.id);
