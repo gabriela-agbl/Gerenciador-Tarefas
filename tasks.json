@@ -8,8 +8,9 @@
     "id": 1734134501272
   },
   {
-    "name": "Limpar a casa",
-    "id": 1734134581341
+    "name": "Limpar a rua",
+    "id": 1734134581341,
+    "description": "Varrer e limpar a rua de casa"
   },
   {
     "name": "fazer almoço",
@@ -22,5 +23,10 @@
   {
     "name": "Lavar a louça",
     "id": 1734134978663
+  },
+  {
+    "name": "Estudar programação",
+    "description": "Ler livros e assistir videoaulas sobre",
+    "id": 1734649755347
   }
 ]

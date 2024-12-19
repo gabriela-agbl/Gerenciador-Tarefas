@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Este é um servidor criado para auxiliar na criação de tarefas. O objetivo deste sistema é permitir que os usuários adicionem, visualizem, editem e removam tarefas de uma lista, ajudando no controle e organização de suas atividades diárias.",
   "dependencies": {
     "express": "^4.21.2"
   }

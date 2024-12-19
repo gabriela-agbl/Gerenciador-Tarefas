@@ -66,6 +66,25 @@ app.put('/tasks/:id', (req, res) => {
   }
 });
 
+// Atualizar uma tarefa existente
+app.put('/tasks/:id', (req, res) => {
+  const { id } = req.params; // ID da tarefa
+  const { title, description } = req.body; // Novos dados
+  const tasks = readTasks();
+
+  const taskIndex = tasks.findIndex(task => task.id === parseInt(id));
+  if (taskIndex === -1) {
+    return res.status(404).json({ error: 'Tarefa não encontrada' });
+  }
+
+   // Atualiza os dados da tarefa
+   tasks[taskIndex].title = title || tasks[taskIndex].title;
+   tasks[taskIndex].description = description || tasks[taskIndex].description;
+ 
+   writeTasks(tasks);
+   res.json({ message: 'Tarefa atualizada com sucesso!' });
+ });
+
 app.delete('/tasks/:id', (req, res) => {
   const tasks = readTasks();
   const id = parseInt(req.params.id);
