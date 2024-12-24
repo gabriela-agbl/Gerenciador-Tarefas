@@ -10,11 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     taskList.innerHTML = '';
     tasks.forEach((task) => {
       const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between align-items-center';
       li.innerHTML = `
+      <div>
         <strong>${task.name}</strong>
-        <p>${task.description || ''}</p>
-        <button onclick="editTask(${task.id})">✏️ Editar</button>
-        <button onclick="deleteTask(${task.id})">🗑️ Excluir</button>
+        <p class="mb-0">${task.description || ''}</p>
+      </div>
+      <div>  
+        <button class="btn btn-success btn-sm me-2" onclick="editTask(${task.id})">✏️ Editar</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">🗑️ Excluir</button>
+      </div>  
       `;
       taskList.appendChild(li);
     });
@@ -51,13 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
       tasks.forEach(task => {
         const taskItem = document.createElement('div');
-        taskItem.className = 'task-item';
+        taskItem.className = 'card mb-3';
     
         taskItem.innerHTML = `
-          <h3>${task.title}</h3>
-          <p>${task.description}</p>
-          <button onclick="editTask(${task.id})">✏️ Editar</button>
-          <button onclick="deleteTask(${task.id})">🗑️ Excluir</button>
+        <div class="card-body">
+          <h3 class="card-title">${task.title}</h3>
+          <p class="card-text">${task.description}</p>
+          <div class="d-flex justify-content-between">  
+            <button class="btn btn-primary btn-sm" onclick="editTask(${task.id})">✏️ Editar</button>
+            <button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">🗑️ Excluir</button>
+          </div>
+        </div>  
         `;
     
         taskList.appendChild(taskItem);
