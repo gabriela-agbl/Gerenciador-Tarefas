@@ -44,9 +44,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para excluir tarefa
   const deleteTask = async (id) => {
-    if (confirm('Tem certeza de que deseja excluir esta tarefa?')) {
-      await fetch(`/tasks/${id}`, { method: 'DELETE' });
-      fetchTasks();
+    try {
+      if (confirm('Tem certeza de que deseja excluir esta tarefa?')) {
+        const response = await fetch(`/tasks/${id}`, { method: 'DELETE' });
+  
+        if (!response.ok) {
+          const error = await response.json();
+          console.error('Erro ao excluir a tarefa:', error);
+          alert(error.error || 'Erro ao excluir a tarefa.');
+          return;
+        }
+  
+        alert('Tarefa excluída com sucesso!');
+        fetchTasks(); // Atualiza a lista
+      }
+    } catch (err) {
+      console.error('Erro na exclusão:', err);
     }
   };
 

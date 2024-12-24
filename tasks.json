@@ -1,7 +1,8 @@
 [
   {
-    "name": "Fazer Lição de Matemática",
-    "id": 1734134467135
+    "name": "Estudar Matemática",
+    "id": 1734134467135,
+    "description": "Fazer exercícios e ler apostilas"
   },
   {
     "name": "Organizar cronograma",
@@ -24,5 +25,10 @@
     "name": "Estudar programação",
     "description": "Ler livros e assistir videoaulas sobre",
     "id": 1734649755347
+  },
+  {
+    "name": "Visitar o museu",
+    "description": "Conhecer o local e ganhar mais conhecimento",
+    "id": 1735050072457
   }
 ]
