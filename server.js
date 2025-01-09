@@ -106,12 +106,4 @@ app.delete('/tasks/:id', (req, res) => {
   res.json({ message: 'Tarefa excluída com sucesso!' });
 });
 
-app.delete('/tasks/:id', (req, res) => {
-  const tasks = readTasks();
-  const id = parseInt(req.params.id);
-  const filteredTasks = tasks.filter((task) => task.id !== id);
-  saveTasks(filteredTasks);
-  res.status(204).send();
-});
-
 app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));
