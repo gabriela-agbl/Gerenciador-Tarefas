@@ -5,8 +5,9 @@
     "description": "Fazer exercícios e ler apostilas"
   },
   {
-    "name": "Organizar cronograma",
-    "id": 1734134501272
+    "name": "Organizar Cronograma",
+    "id": 1734134501272,
+    "description": "Atualizar minhas tarefas"
   },
   {
     "name": "Limpar a rua",
@@ -16,10 +17,6 @@
   {
     "name": "Fazer Lição de História",
     "id": 1734134952701
-  },
-  {
-    "name": "Lavar a louça",
-    "id": 1734134978663
   },
   {
     "name": "Estudar programação",
