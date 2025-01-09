@@ -101,7 +101,7 @@ app.delete('/tasks/:id', (req, res) => {
   // Remove a tarefa da lista
   tasks = tasks.filter(task => task.id !== parseInt(id, 10));
 
-  writeTasks(tasks);
+  saveTasks(tasks);
   console.log('Tarefa excluída com sucesso!');
   res.json({ message: 'Tarefa excluída com sucesso!' });
 });
