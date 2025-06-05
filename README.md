@@ -1,8 +1,12 @@
-# 📑 Gerenciador de Tarefas Online
+<div align="center">
+<h1>📑 Gerenciador de Tarefas Online</h1>
 
 Este é um servidor criado para auxiliar na criação de tarefas. O objetivo deste sistema é permitir que os usuários adicionem, visualizem, editem e removam tarefas de uma lista, ajudando no controle e organização de suas atividades diárias.
+</div>
 
-## 📋 Tecnologias utilizadas
+<div align="center">
+<h2>📋 Tecnologias utilizadas</h2>
+</div>
 
 - **JavaScript**: Para interatividade e manipulação de dados.
 - **HTML**: Para estruturação da página web.
@@ -10,7 +14,9 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
 - **Node.js**: Para configurar o servidor backend.
 - **JSON**: Para persistência das tarefas.
 
-## 🛠️ Funcionalidades
+<div align="center">
+<h2>🛠️ Funcionalidades</h2>
+</div>
 
 - ✅ Adicionar tarefas com título e descrição. ✅
 - 📋 Listar todas as tarefas salvas. ✅ 
@@ -18,7 +24,9 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
 - 🗑️ Excluir tarefas desnecessárias. ✅
 - 💾 Persistência de dados usando um arquivo JSON. ✅
 
-## 📂 **Estrutura do Projeto**
+<div align="center">
+<h2>📂 Estrutura do Projeto</h2>
+</div>
 
    ```bash
       Gerenciador de Tarefas/
@@ -36,7 +44,9 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
 └── README.md             # Documentação do projeto
    ```
 
-## 🚀 Como executar o servidor
+<div align="center">
+<h2>🚀 Como executar o servidor</h2>
+</div>
 
 1. Clone este repositório:
     ```bash
@@ -61,14 +71,19 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
     ```arduino
     http://localhost:3000
     ```
-## 🧩 Dependências   
+
+<div align="center">    
+<h2>🧩 Dependências</h2>   
+</div>
 
 - **Express.js** - Framework para servidor web.
 - **Node.js** - Ambiente de execução do JavaScript.
 
-## 🤝 Contribuição
+<div align="center">
+<h2>🤝 Contribuição</h2>
 
 Contribuições são sempre bem-vindas!
+</div>
 
 1. Faça um **fork** do projeto.
 
@@ -80,11 +95,16 @@ Contribuições são sempre bem-vindas!
 
 5. Abra um **Pull Request**.
 
-## 📊 Status do projeto
+<div align="center">
+<h2>📊 Status do projeto</h2>
 
 Atualmente em desenvolvimento 🟡. Mais recursos serão adicionados em breve!
+</div>
 
-## 📝 Licença
+<div align="center">
+<h2>📝 Licença</h2>
    Este projeto foi desenvolvido para fins educacionais e está disponível para uso e modificação conforme necessário.
 
    Feito por [Gabriela Rodrigues](https://github.com/Agbl09)
+   
+</div>
