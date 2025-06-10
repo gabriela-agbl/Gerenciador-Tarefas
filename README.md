@@ -98,7 +98,8 @@ Contribuições são sempre bem-vindas!
 <div align="center">
 <h2>📊 Status do projeto</h2>
 
-Atualmente em desenvolvimento 🟡. Mais recursos serão adicionados em breve!
+Atualmente em desenvolvimento 🟡.<br> 
+Mais recursos serão adicionados em breve!
 </div>
 
 <div align="center">
