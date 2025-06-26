@@ -50,7 +50,7 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/Agbl09/Gerenciador-Tarefas.git
+    git clone https://github.com/gabriela-agbl/Gerenciador-Tarefas.git
     cd Gerenciador-Tarefas
     ```
 2. Instale as dependências:
