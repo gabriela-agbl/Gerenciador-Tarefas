@@ -48,7 +48,7 @@ Este é um servidor criado para auxiliar na criação de tarefas. O objetivo des
 <h2>🚀 Como executar o servidor</h2>
 </div>
 
-1. Clone este repositório:
+1. Clone este repositório e entre na pasta dele:
     ```bash
     git clone https://github.com/gabriela-agbl/Gerenciador-Tarefas.git
     cd Gerenciador-Tarefas
